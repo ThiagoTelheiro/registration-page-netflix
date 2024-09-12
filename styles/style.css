@@ -71,12 +71,39 @@
   color: #fff;
   font-weight: normal;
 }
-.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text span {
-  font-size: 1.25rem;
-  color: #fff;
-  font-weight: normal;
-}
 .cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .formulario {
   display: flex;
   gap: 15px;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .formulario .formulario-email {
+  height: 60px;
+  width: 360px;
+  border: none;
+  background-color: #171717;
+  border-radius: 7px;
+  border: 1px solid #d9d9d9;
+  padding-left: 29px;
+  color: white;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .formulario .formulario-email::-moz-placeholder {
+  font-size: 1.25rem;
+  color: #cfa7a7;
+  font-weight: normal;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .formulario .formulario-email::placeholder {
+  font-size: 1.25rem;
+  color: #cfa7a7;
+  font-weight: normal;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .formulario .formulario-btn {
+  text-align: center;
+  height: 60px;
+  width: 230px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff0000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */
