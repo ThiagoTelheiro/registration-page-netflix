@@ -1,0 +1,5 @@
+@mixin fs-fc-fw($f-size, $f-color, $f-weight) {
+  font-size: $f-size;
+  color: $f-color;
+  font-weight: $f-weight;
+}

@@ -1,10 +1,10 @@
 @use "../abstract/variaveis";
+@use "../abstract/mixins";
 
 .cabecalho {
   height: 100vh;
   background: url(../../img/Netflix-Hintergrund\ 1.png) center center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding-top: 21px;
 
   .cabecalho-nav {
@@ -57,10 +57,31 @@
     justify-content: center;
 
     .cabecalho-conteudo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+
+      h1 {
+        @include mixins.fs-fc-fw (2.5rem, variaveis.$text, bold);
+      }
+
+      p {
+        @include mixins.fs-fc-fw (1.5rem, variaveis.$text, normal);
+      }
+
+      span {
+        @include mixins.fs-fc-fw (1.25rem, variaveis.$text, normal);
+      }
+
+      .formulario {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 22px;
+        gap: 15px;
+
+        .formulario-email {
+            
+        }
+      }
     }
   }
 }
