@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Cadastro Netflix</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <div class="cabecalho-nav">
-            <img src="img/360_F_481762281_Xcvl3QsGh1pBMvQuyKIoIqq8aYksXEwX_1-removebg-preview.png" alt="Logo Netflix">
+      <div class="cabecalho-nav">
+        <img
+          src="img/360_F_481762281_Xcvl3QsGh1pBMvQuyKIoIqq8aYksXEwX_1-removebg-preview.png"
+          alt="Logo Netflix"
+        />
 
-            <div class="cabecalho-acoes">
-                <form>
-                    <select id="language" name="language">
-                      <option value="pt-br">Português (Brasil)</option>
-                      <option value="en">Inglês</option>
-                    </select>
-                  </form>
+        <div class="cabecalho-acoes">
+          <form>
+            <select id="language" name="language">
+              <option value="pt-br">Português</option>
+              <option value="en">Inglês</option>
+            </select>
+          </form>
 
-                  <button>Entrar</button>
-            </div>
+          <button class="btn">Entrar</button>
         </div>
+      </div>
 
-        <div class="cabecalho-conteudo">
-            <h1>Filmes, programas de TV ilimitados e muito mais</h1>
-            <p>Assista em qualquer lugar. Cancele a qualquer momento.</p>
-            <span>Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua assinatura.</span>
-
-            <form action="#">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="Comece">
-            </form>
+      <div class="cabecalho-conteudo">
+        <div class="cabecalho-conteudo-text">
+          <h1>Filmes, programas de TV ilimitados e muito mais</h1>
+          <p>Assista em qualquer lugar. Cancele a qualquer momento.</p>
+          <span
+            >Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua
+            assinatura.</span
+          >
+          <form action="#">
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Comece" />
+          </form>
         </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>

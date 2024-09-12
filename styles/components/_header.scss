@@ -1,5 +1,66 @@
 @use "../abstract/variaveis";
 
 .cabecalho {
-    background-image: url(../);
+  height: 100vh;
+  background: url(../../img/Netflix-Hintergrund\ 1.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 21px;
+
+  .cabecalho-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 170px;
+
+    .cabecalho-acoes {
+      display: flex;
+      gap: 30px;
+
+      #language {
+        font-size: 1.25rem;
+        text-align: center;
+        height: 37px;
+        width: 167px;
+        border-radius: 7px;
+        border: 1px solid variaveis.$border;
+        color: variaveis.$text;
+        font-weight: bold;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          border: 1px solid variaveis.$border;
+          background-color: variaveis.$gray-dark;
+        }
+      }
+
+      .btn {
+        font-size: 1.25rem;
+        text-align: center;
+        height: 37px;
+        width: 113px;
+        border: none;
+        border-radius: 7px;
+        background-color: variaveis.$color-button;
+        color: variaveis.$text;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cabecalho-conteudo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cabecalho-conteudo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+  }
 }
