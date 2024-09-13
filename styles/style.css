@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+}
+
+button {
+  cursor: pointer;
+}
+
+.cabecalho {
+  height: 100vh;
+  background: url(../../img/Netflix-Hintergrund\ 1.png) no-repeat center center;
+  background-size: cover;
+}
+.cabecalho .cabecalho-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 196px 0 196px;
+}
+.cabecalho .cabecalho-nav img {
+  width: 200px;
+  height: 50px;
+}
+.cabecalho .cabecalho-nav .cabecalho-acoes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cabecalho .cabecalho-nav .cabecalho-acoes #language {
+  width: 167px;
+  height: 37px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-nav .cabecalho-acoes #language:focus {
+  background-color: #171717;
+}
+.cabecalho .cabecalho-nav .cabecalho-acoes .btn {
+  width: 118px;
+  height: 37px;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text span {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form {
+  display: flex;
+  gap: 15px;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email {
+  width: 360px;
+  height: 60px;
+  background-color: #171717;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 0 29px;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email::-moz-placeholder {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #CFA7A7;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email::placeholder {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #CFA7A7;
+}
+.cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-btn {
+  width: 230px;
+  height: 60px;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
