@@ -121,22 +121,22 @@ button {
   background-color: #000;
   color: #fff;
 }
-.beneficios .beneficios-tv, .beneficios .beneficios-kids, .beneficios .beneficios-download {
+.beneficios .beneficios-tv, .beneficios .beneficios-watch, .beneficios .beneficios-kids, .beneficios .beneficios-download {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 102px;
   height: 624px;
 }
-.beneficios .beneficios-tv .beneficios-text, .beneficios .beneficios-kids .beneficios-text, .beneficios .beneficios-download .beneficios-text {
+.beneficios .beneficios-tv .beneficios-text, .beneficios .beneficios-watch .beneficios-text, .beneficios .beneficios-kids .beneficios-text, .beneficios .beneficios-download .beneficios-text {
   max-width: 510px;
 }
-.beneficios .beneficios-tv .beneficios-text h2, .beneficios .beneficios-kids .beneficios-text h2, .beneficios .beneficios-download .beneficios-text h2 {
+.beneficios .beneficios-tv .beneficios-text h2, .beneficios .beneficios-watch .beneficios-text h2, .beneficios .beneficios-kids .beneficios-text h2, .beneficios .beneficios-download .beneficios-text h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 49px;
 }
-.beneficios .beneficios-tv .beneficios-text p, .beneficios .beneficios-kids .beneficios-text p, .beneficios .beneficios-download .beneficios-text p {
+.beneficios .beneficios-tv .beneficios-text p, .beneficios .beneficios-watch .beneficios-text p, .beneficios .beneficios-kids .beneficios-text p, .beneficios .beneficios-download .beneficios-text p {
   font-size: 1.25rem;
   font-weight: normal;
 }
