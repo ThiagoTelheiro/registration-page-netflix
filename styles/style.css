@@ -98,12 +98,12 @@ button {
 .cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email::-moz-placeholder {
   font-size: 1.25rem;
   font-weight: normal;
-  color: #CFA7A7;
+  color: #cfa7a7;
 }
 .cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email::placeholder {
   font-size: 1.25rem;
   font-weight: normal;
-  color: #CFA7A7;
+  color: #cfa7a7;
 }
 .cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-btn {
   width: 230px;
@@ -115,4 +115,42 @@ button {
   font-size: 1.5rem;
   font-weight: normal;
   color: #ffffff;
+}
+
+.beneficios {
+  background-color: #000;
+  color: #fff;
+}
+.beneficios .beneficios-tv, .beneficios .beneficios-kids, .beneficios .beneficios-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 102px;
+  height: 624px;
+}
+.beneficios .beneficios-tv .beneficios-text, .beneficios .beneficios-kids .beneficios-text, .beneficios .beneficios-download .beneficios-text {
+  max-width: 510px;
+}
+.beneficios .beneficios-tv .beneficios-text h2, .beneficios .beneficios-kids .beneficios-text h2, .beneficios .beneficios-download .beneficios-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 49px;
+}
+.beneficios .beneficios-tv .beneficios-text p, .beneficios .beneficios-kids .beneficios-text p, .beneficios .beneficios-download .beneficios-text p {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.beneficios .beneficios-download {
+  gap: 0px;
+}
+.beneficios .beneficios-download .beneficos-img-download {
+  position: relative;
+}
+.beneficios .beneficios-download .beneficos-img-download .img-mobile {
+  position: relative;
+}
+.beneficios .beneficios-download .beneficos-img-download .img-frame {
+  position: absolute;
+  right: 117px;
+  bottom: 35px;
 }/*# sourceMappingURL=style.css.map */

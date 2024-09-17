@@ -33,7 +33,7 @@
         @include mixins.fs-fw-fc(1rem, bold, variaveis.$color-text);
 
         &:focus {
-            background-color: variaveis.$color-form;
+          background-color: variaveis.$color-form;
         }
       }
 
@@ -56,53 +56,53 @@
     height: 100%;
 
     .cabecalho-conteudo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+
+      h1 {
+        @include mixins.fs-fw-fc(2.5rem, bold, variaveis.$color-text);
+      }
+
+      p {
+        @include mixins.fs-fw-fc(1.5rem, normal, variaveis.$color-text);
+      }
+
+      span {
+        @include mixins.fs-fw-fc(1.25rem, normal, variaveis.$color-text);
+      }
+
+      .cabecalho-conteudo-form {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 22px;
+        gap: 15px;
 
-        h1 {
-            @include mixins.fs-fw-fc(2.5rem, bold, variaveis.$color-text);
+        .form-email {
+          width: 360px;
+          height: 60px;
+          background-color: variaveis.$color-form;
+          border: 1px solid variaveis.$color-text;
+          border-radius: 6px;
+          padding: 0 29px;
+
+          @include mixins.fs-fw-fc(1rem, normal, variaveis.$color-text);
+
+          &::placeholder {
+            @include mixins.fs-fw-fc(1.25rem, normal, #cfa7a7);
+          }
         }
 
-        p {
-            @include mixins.fs-fw-fc(1.5rem, normal, variaveis.$color-text);
+        .form-btn {
+          width: 230px;
+          height: 60px;
+          background-color: variaveis.$color-btn;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+
+          @include mixins.fs-fw-fc(1.5rem, normal, variaveis.$color-text);
         }
-
-        span {
-            @include mixins.fs-fw-fc(1.25rem, normal, variaveis.$color-text);
-        }
-
-        .cabecalho-conteudo-form {
-            display: flex;
-            gap: 15px;
-
-            .form-email {
-                width: 360px;
-                height: 60px;
-                background-color: variaveis.$color-form;
-                border: 1px solid variaveis.$color-text;
-                border-radius: 6px;
-                padding: 0 29px;
-
-                @include mixins.fs-fw-fc(1rem, normal, variaveis.$color-text);
-
-                &::placeholder {
-                    @include mixins.fs-fw-fc(1.25rem, normal, #CFA7A7);
-                }
-            }
-
-            .form-btn {
-                width: 230px;
-                height: 60px;
-                background-color: variaveis.$color-btn;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-
-                @include mixins.fs-fw-fc(1.5rem, normal, variaveis.$color-text);
-            }
-        }
+      }
     }
   }
 }

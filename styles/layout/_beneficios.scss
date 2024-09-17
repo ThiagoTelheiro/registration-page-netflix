@@ -1,0 +1,53 @@
+@use "../base/variaveis";
+@use "../base/mixins";
+
+.beneficios {
+  background-color: #000;
+  color: #fff;
+
+  .beneficios-tv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 102px;
+    height: 624px;
+
+    .beneficios-text {
+      max-width: 510px;
+
+      h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 49px;
+      }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .beneficios-download {
+    @extend.beneficios-tv;
+    gap: 0px;
+
+    .beneficos-img-download {
+      position: relative;
+
+      .img-mobile {
+        position: relative;
+      }
+
+      .img-frame {
+        position: absolute;
+        right: 117px;
+        bottom: 35px;
+      }
+    }
+  }
+
+  .beneficios-kids {
+    @extend.beneficios-tv;
+  }
+}
