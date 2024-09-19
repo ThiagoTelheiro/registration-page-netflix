@@ -1,0 +1,94 @@
+@use "../base/variaveis";
+@use "../base/mixins";
+
+.perguntas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 882px;
+  background-color: #000;
+  color: #fff;
+  padding: 92px 0 49px 0;
+
+  h3 {
+    @include mixins.fs-fw-fc(3rem, bolder, variaveis.$color-text);
+    margin-bottom: 80px;
+  }
+
+  .perguntas-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 35px;
+
+    .perguntas-box-self {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 60px;
+      background-color: variaveis.$color-questions;
+      max-width: 1012px;
+      width: 100%;
+      padding: 0 53px 0 77px;
+      cursor: pointer;
+
+      p {
+        @include mixins.fs-fw-fc(0.98rem, bolder, variaveis.$color-text);
+      }
+
+      span {
+        @include mixins.fs-fw-fc(1.5rem, bold, variaveis.$color-text);
+      }
+    }
+  }
+
+  .perguntas-criar {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    p {
+      @include mixins.fs-fw-fc(1.25rem, bold, variaveis.$color-text);
+    }
+
+    .formulario {
+      display: flex;
+      gap: 23px;
+      justify-content: center;
+
+      .formulario-email {
+        height: 60px;
+        width: 393px;
+        background-color: variaveis.$color-form;
+        border: 1px solid variaveis.$color-text;
+        border-radius: 6px;
+        padding: 0 29px;
+        color: #fff;
+
+        &::placeholder {
+          @include mixins.fs-fw-fc(1rem, bold, variaveis.$color-placehoader);
+        }
+      }
+
+      .formulario-btn {
+        width: 230px;
+        height: 60px;
+        background-color: variaveis.$color-btn;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+
+        @include mixins.fs-fw-fc(1rem, bold, variaveis.$color-text);
+      }
+    }
+  }
+}
+
+hr {
+  border: none;
+  border: 2px solid #1e1e1e;
+}

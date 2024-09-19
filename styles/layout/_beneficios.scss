@@ -16,14 +16,12 @@
       max-width: 510px;
 
       h2 {
-        font-size: 3rem;
-        font-weight: bold;
+        @include mixins.fs-fw-fc(3rem, bolder, variaveis.$color-text);
         margin-bottom: 49px;
       }
 
       p {
-        font-size: 1.25rem;
-        font-weight: normal;
+        @include mixins.fs-fw-fc(1.25rem, normal, variaveis.$color-text);
       }
     }
   }
