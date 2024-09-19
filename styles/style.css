@@ -87,7 +87,7 @@ button {
 .cabecalho .cabecalho-conteudo .cabecalho-conteudo-text .cabecalho-conteudo-form .form-email {
   width: 360px;
   height: 60px;
-  background-color: #171717;
+  background-color: rgba(23, 23, 23, 0.7);
   border: 1px solid #ffffff;
   border-radius: 6px;
   padding: 0 29px;
