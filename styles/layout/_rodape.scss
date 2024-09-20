@@ -1,0 +1,59 @@
+@use "../base/variaveis";
+@use "../base/mixins";
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000;
+  height: 338px;
+
+  .rodape-container {
+    height: 300px;
+    width: 1023px;
+    padding-top: 10px;
+
+    span {
+      @include mixins.fs-fw-fc(1rem, 400, rgba(255, 255, 255, 0.7));
+    }
+
+    .rodape-links {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0 30px 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li a {
+          @include mixins.fs-fw-fc(1rem, 400, rgba(255, 255, 255, 0.7));
+        }
+      }
+    }
+  }
+
+  .rodape-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    #language {
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid variaveis.$color-text;
+      border-radius: 7px;
+      cursor: pointer;
+      background-color: variaveis.$color-form;
+
+      @include mixins.fs-fw-fc(1rem, bold, variaveis.$color-text);
+    }
+
+    span {
+        font-size: 0.9rem;
+    }
+  }
+}
